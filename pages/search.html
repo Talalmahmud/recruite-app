@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/search.css" />
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+            <a href="../home.html" class="logo">RecruitApp</a>
+
+            <button><a href="../home.html">Logout</a></button>
+        </header>
+        <div class="container">
+            <h2>Candidate Search</h2>
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Enter location"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="job-role">Job Role:</label>
+                    <input
+                        type="text"
+                        id="job-role"
+                        placeholder="Enter job role"
+                    />
+                </div>
+                <button type="submit">Search</button>
+            </form>
+
+            <h2>Candidate Listing</h2>
+            <div class="candidate-list">
+                <!-- Candidate Card -->
+                <div class="candidate-card">
+                    <h3>John Doe</h3>
+                    <p>Location: New York</p>
+                    <p>Job Role: Software Engineer</p>
+                    <button>Add to Evaluation</button>
+                </div>
+
+                <!-- Candidate Card -->
+                <div class="candidate-card">
+                    <h3>Jane Smith</h3>
+                    <p>Location: San Francisco</p>
+                    <p>Job Role: Data Analyst</p>
+                    <button>Add to Evaluation</button>
+                </div>
+
+                <!-- Add more candidate cards here -->
+            </div>
+
+            <h3>Evaluation List</h3>
+            <div class="evaluation-list">
+                <!-- Selected Candidate Card -->
+                <div class="selected-candidate">
+                    <h4>John Doe</h4>
+                    <p>Location: New York</p>
+                    <p>Job Role: Software Engineer</p>
+                    <button>Rank and Evaluate</button>
+                </div>
+
+                <!-- Selected Candidate Card -->
+                <div class="selected-candidate">
+                    <h4>Jane Smith</h4>
+                    <p>Location: San Francisco</p>
+                    <p>Job Role: Data Analyst</p>
+                    <button>Rank and Evaluate</button>
+                </div>
+
+                <!-- Add more selected candidate cards here -->
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 RecruitApp. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
